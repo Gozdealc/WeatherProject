@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('./icons/city-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    text-align: center;
+    align-items: center;
+    display: inline-block;       /* Sadece içeriği kapsa */
+    padding: 20px;               /* İç boşluk */
+    background-color: rgba(0, 0, 0, 0.7); 
+    border: none;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;         /* Kenar yuvarlama */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    width: 350px;
+    height: 450px;
+}
+.weather-input .bx {
+    color: white;
+    font-size: 25px;
+}
+.weather-icon {
+    width: 100px;                 /* İkonun genişliği */
+    height: auto;                /* Oranı koruyarak yüksekliği ayarla */
+}
+.weather-img {
+   margin: 10px 0;
+}
+#city-input {
+    padding: 15px;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 1.5px solid rgb(235, 163, 30);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+.weather-content {
+    color: white; 
+    display: flex;               /* İçeriği yan yana hizalar */
+    flex-direction: column;      /* Kolon şeklinde hizalar (isteğe bağlı) */
+    align-items: center;         /* Tüm içerik yatayda ortalanır */
+    text-align: center;          /* Yazılar ortalanır */
+    gap: 5px;                   /* Elemanlar arasına boşluk ekler */
+    margin-top: 10px;            /* Yukarıdan boşluk */
+}
+#weather-city {
+    font-size: 25px;
+    margin: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow: 1px 2px rgba(240, 5, 5, 0.5);
+}
+#weather-degree {
+    font-size: 45px;
+    margin: 10px;
+    font-weight: bold;
+    text-shadow: 1px 2px rgba(240, 5, 5, 0.5);
+}
+#weather-description { 
+    font-size: 20px;
+    margin-top: 10px;
+    text-shadow: 1px 2px rgba(240, 5, 5, 0.5);
+    text-transform: capitalize;
+}
